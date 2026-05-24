@@ -13,6 +13,23 @@ https://webllm.mlc.ai/
 
 But i'd rather not delve into the specifics of that. TLDR: its basically just a way to run a model in the web.
 
+Ok enough of the general stuff
+
+# Usage
+
+to use tinyphraser 
+1. Install node 
+2. open a terminal to the project folder root and then run 
+```bash
+npm create vite@latest . -- --template vanilla
+```
+3. Say yes if it asks about anything, choose to your prefrences
+4. npm install @mlc-ai/web-llm <-- install webllm (for more info visit webllm docs)
+5. start the dev server 
+```bash
+npm run dev
+```
+# file structure
 here is a beginner file strucutre (just for now)
 ├── index.html
 ├── style.css
