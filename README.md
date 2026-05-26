@@ -8,7 +8,7 @@ no api calls, no logs, no cookies, no backend. the model runs entirely in your b
 
 # what is tinyphraser?
 
-tinyphraser is a lightweight browser app that lets you paste any email or message and have it rephrased or rewritten in a different tone — professional, casual, concise, friendly, assertive, whatever you need.
+tinyphraser is a lightweight browser app that lets you paste any email or message and have it rephrased or rewritten in a different tone   professional, casual, concise, friendly, assertive, whatever you need.
 
 the difference from every other "ai writing tool" is that there is no server involved at any point. not for the model, not for your text, not for anything. your email never leaves the tab.
 
@@ -24,7 +24,7 @@ tinyphraser is for the second group. you know people who work with sensitive con
 
 # how does it work?
 
-its just html and javascript. the heavy lifting is a library called [webllm](https://webllm.mlc.ai/) which lets you run a small language model directly in the browser using webgpu — a modern browser api that gives javascript access to your gpu.
+its just html and javascript. the heavy lifting is a library called [webllm](https://webllm.mlc.ai/) which lets you run a small language model directly in the browser using webgpu   a modern browser api that gives javascript access to your gpu.
 
 first time you open the app it downloads the model and caches it locally. after that it loads instantly and works with no connection.
 
@@ -36,14 +36,14 @@ if you want to see what webllm is capable of theres a live demo at the link abov
 
 **requirements:**
 - [node.js](https://nodejs.org) (LTS version is fine)
-- chrome 113+ or edge 113+ — firefox does not support webgpu yet
+- chrome 113+ or edge 113+   firefox does not support webgpu yet
 - a gpu that supports webgpu (most machines from the last 5 years are fine)
 
 **setup:**
 
 1. open a terminal in the project folder
 
-2. scaffold vite — this just sets up the dev server, it wont overwrite your files
+2. scaffold vite   this just sets up the dev server, it wont overwrite your files
 ```bash
 npm create vite@latest . -- --template vanilla
 ```
@@ -106,7 +106,7 @@ the model downloads once and gets cached by the browser. clearing site data will
 # notes
 
 - tested on chrome 124+ and edge 124+
-- first inference after loading can feel slow — the model warms up after the first message and gets faster
+- first inference after loading can feel slow   the model warms up after the first message and gets faster
 - works best with shorter emails, very long walls of text may produce slower output
 - clearing browser cache will force a fresh model download
 - if the page crashes on load, your browser or gpu may not support webgpu  try chrome if you arent already
